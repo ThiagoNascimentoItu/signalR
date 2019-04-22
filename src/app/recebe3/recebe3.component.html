@@ -1,0 +1,16 @@
+<div class="dropdown">
+    <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+      <i class="fas fa-bell"><span class="badge badge-pill badge-danger"></span>{{ usuario.length }}</i
+        >
+    </a>
+  <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+    <div class="notifications-wrapper ">
+      <a class="content " href="#">
+        <div class="notification-item" *ngFor="let usuario1 of usuario">
+          <b>{{usuario1.nome}}</b> recebeu um {{usuario1.recebeu}} do amigo {{usuario1.amigo}}
+          <div class="divider"></div>
+      </div>
+      </a>
+    </div>
+  </ul>
+</div>

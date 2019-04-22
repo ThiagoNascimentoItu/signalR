@@ -1,0 +1,20 @@
+<div class="dropdown">
+  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    <i class="fas fa-bell"><span class="badge badge-pill badge-danger"></span>{{ tarefas?.length }}</i>
+  </a>
+
+  <ul class="dropdown-menu notifications" role="menu" aria-labelledby="dLabel">
+
+
+
+    <div class="notifications-wrapper">
+      <a class="content" href="#">
+
+        <div class="notification-item" *ngFor="let tarefa of tarefas">
+          Título: {{tarefa.title}}<br>Data Inicio: {{tarefa.dataPrevistaInicio}}
+          <div class="divider"></div>
+        </div>
+      </a>
+    </div>
+  </ul>
+</div>
